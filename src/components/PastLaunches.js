@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
@@ -19,17 +18,22 @@ class PastLaunches extends React.Component {
 
   render() {
     const launchCard = this.state.pastLaunchesArray.map((e, i) => (
-      <div key={i}>
+      <div className="each-card-past" key={i}>
         <Link to={`/${e.flight_number}`}>
-          <h2>{e.mission_name}</h2>
-          <h2>{e.launch_year}</h2>
-          <img src={e.links.mission_patch_small} />
+          <h2>Mission name: {e.mission_name}</h2>
+          <h2>Launch year: {e.launch_year}</h2>
+          <img className="patch-picture" src={e.links.mission_patch_small} />
         </Link>
       </div>
     ))
     return <>
-      <div>
-        {launchCard}
+      <div className="past-background">
+        <p className="past-introduction">
+          Here you can explore all of SpaceX's past launches, from 2006 to the present! Scroll left and right to see all of them! Click on any launch to see additional information!
+        </p>
+        <div className="past-body">
+          {launchCard}
+        </div>
       </div>
     </>
   }
