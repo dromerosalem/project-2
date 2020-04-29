@@ -13,7 +13,7 @@ import WeatherMars from './components/WeatherMars'
 import NavBar from './components/NavBar'
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/project-2">
     <NavBar />
     <Switch>
       <Route exact path='/WeatherMars' component={WeatherMars}/>
