@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import axios from 'axios'
 
 class SingleLaunch extends React.Component {
@@ -28,13 +27,7 @@ class SingleLaunch extends React.Component {
 
   render() {
     const { flight_number, mission_name, launch_date_utc, rocket, launch_site, links, details } = this.state.launch
-    // const betterLaunchDateArray = this.state.launch_date_utc.split('')
-    // const betterLaunchDate = []
-    // for (let i = 0; i < 10; i++) {
-    //   betterLaunchDate.push[betterLaunchDateArray[i]]
-    // }
-    // const joinedBetterLaunchDate = betterLaunchDate.join('')
-
+    
     return <>
       <div className="single-background">
         <div className="single-launch-body">

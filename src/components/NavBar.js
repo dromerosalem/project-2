@@ -6,8 +6,12 @@ const NavBar = () => {
     <div className="navbar-menu">
       <div className="container">
         <div className="navbar-end">
+
           <div className="navbar-item">
             <Link to={'/'}>Home</Link>
+          </div>
+          <div className="navbar-item weather-navbar">
+            <Link to={'/WeatherMars'}>Weather on Mars</Link>
           </div>
           <div className="navbar-item">
             <Link to={'/past'}>Past Launches</Link>
