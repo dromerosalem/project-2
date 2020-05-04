@@ -233,4 +233,6 @@ Aditional 3 pictures were added in the single card. The rocket pictures, they we
 
 ## Challenges 
 
--Depending on the structure of the API, it can be quite tedious to get all the information that you want. So understading the API at first place was a challenge as we were not rendering what we wanted from the really begining, a lesson learned from this project will be definetly reasearch the API we want to use first.
+- Depending on the structure of the API, it can be quite tedious to get all the information that you want. So understading the API at first place was a challenge as we were not rendering what we wanted from the really begining, a lesson learned from this project will be definetly reasearch the API we want to use first.
+
+- Deploying React Router on GitHub pages was also quite difficult, as many adjustments were needed to move from the dev-server. For instance, some images are  visible in the localhost but not yet into the live page what is a bug to be fixed from the deployment perspective.
