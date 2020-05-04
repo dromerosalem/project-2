@@ -27,7 +27,7 @@ You can launch the site on GitHub pages [here](https://dromerosalem.github.io/pr
 - React.js
 - HTML, JSX
 - Space-X public API
-- HTML, JSX
+- SASS
 - Webpack
 - NPM
 - Git and GitHub
