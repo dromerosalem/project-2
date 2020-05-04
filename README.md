@@ -1,5 +1,5 @@
 ### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
-# SPACE X <img src= images/spacexlogo.png height=50 width=50 />
+# SPACE X <img src= src/images/spacexlogo.png height=50 width=50 />
 
 ## Overview
 
@@ -41,7 +41,7 @@ As a pair we were both interested in Space-X  and their missions to Mars. So we'
 We deceided to use a Open Source REST  [API](https://docs.spacexdata.com/?version=latest#5fc4c846-c373-43df-a10a-e9faf80a8b0a)  from Space-X that will include images and all the related information to those flights. So you could get a description of each particular mission.
 
 
-- **The Routes with React Router**
+**The Routes with React Router**
 
 So we decided to have 4 main components each one with their own Route.
 - `/` - as the Home page, so the landing page.
@@ -49,9 +49,40 @@ So we decided to have 4 main components each one with their own Route.
 - `/upcoming` - as the upcoming flights to be done.
 - `/:flightNumber` - a dinamic route that will render an idividual flight with      their description  
 
+Later as an aditional route I add a new path `/WeatherMars` what is using just a inframe tag provided by NASA that is deploying weather measurements (temperature, wind, pressure) on the surface of Mars.
+
+
+
+```js
+const App = () => (
+  <BrowserRouter basename="/project-2">
+    <NavBar />
+    <Switch>
+      <Route exact path='/WeatherMars' component={WeatherMars}/>
+      <Route exact path="/past" component={PastLaunches} />
+      <Route exact path="/upcoming" component={UpcomingLaunches} />
+      <Route exact path="/" component={Home} />
+      <Route path="/:flightNumber" component={SingleLaunch} />
+    </Switch>
+  </BrowserRouter>
+)
+
+```
+
+- **HOME**
+
+The landing page is no more rendering two buttons that will take you rahter to the `/past` path or `/upcoming` path.
+
+```js
+        <Link to={'/past'} style={{ fontFamily: 'Special Elite', color: 'black' }}><button>Click here to see past launches</button></Link>
+        
+        <Link to={'/upcoming'} style={{ fontFamily: 'Special Elite', color: 'black' }}><button>Click here to see upcoming launches</button></Link>
+
+```
 
 
 
 
 
+ ![](./src/images/home.png)
 
