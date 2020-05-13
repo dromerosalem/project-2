@@ -237,6 +237,12 @@ Aditional 3 pictures were added in the single card. The rocket pictures, they we
 
 - Deploying React Router on GitHub pages was also quite difficult, as many adjustments were needed to move from the dev-server. For instance, some images are  visible in the localhost but not yet into the live page what is a bug to be fixed from the deployment perspective.
 
+## Victories
+
+- As the project was developed in 48 hours the biggest we had to work as an hackatlhon enviroment, developing as much as we could with the given time. Having a functional MVP just after getting the new skills for fethching an external API was somehting that by the end of the project we felt proud of.
+
+- Was the first project working in team. So we had to work as a one in order to accomplish the given goal. It was challeging at the moment to start but once we got into it we flow super smoth as a team. 
+
 
 ## Lessons Learned
 
