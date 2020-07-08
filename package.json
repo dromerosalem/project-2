@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "webpack -p",
     "test": "react-scripts test",
+    "serve": "webpack-dev-server --mode=development",
     "eject": "react-scripts eject"
   },
   "author": "",
