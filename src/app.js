@@ -16,7 +16,7 @@ const App = () => (
   <BrowserRouter basename="/project-2">
     <NavBar />
     <Switch>
-      <Route exact path='/WeatherMars' component={WeatherMars}/>
+      {/* <Route exact path='/WeatherMars' component={WeatherMars}/> */}
       <Route exact path="/past" component={PastLaunches} />
       <Route exact path="/upcoming" component={UpcomingLaunches} />
       <Route exact path="/" component={Home} />

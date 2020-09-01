@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack -p",
     "test": "react-scripts test",
     "serve": "webpack-dev-server --mode=development",

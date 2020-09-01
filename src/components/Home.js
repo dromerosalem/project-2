@@ -11,7 +11,6 @@ const Home = () => {
         Here you can find all of SpaceX's launches from past and future missions! You can get more information if you visit the specific pages!
       </p>
       <div>
-        
         <Link to={'/past'} style={{ fontFamily: 'Special Elite', color: 'black' }}><button>Click here to see past launches</button></Link>
         <Link to={'/upcoming'} style={{ fontFamily: 'Special Elite', color: 'black' }}><button>Click here to see upcoming launches</button></Link>
       </div>
